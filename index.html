@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>openLib</title>
+
+    <style>
+      /* *import google font */
+      @import url("https://fonts.google.com/specimen/Poppins");
+      @import url("https://fonts.google.com/specimen/Open+Sans");
+
+      /* *hero start */
+
+      header {
+        background-image: url("images/bg-hero-desktop.svg");
+        background-size: cover;
+        background-color: hsl(193, 100%, 96%);
+      }
+
+      header .s-hero-btn {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        background-color: hsl(322, 100%, 66%);
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        font-weight: 600;
+        padding: 5px 20px;
+        text-align: start !important;
+        margin-top: 15px;
+      }
+
+      header .s-hero-btn:hover {
+        background-color: #fff;
+        box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+        color: hsl(322, 100%, 66%);
+        transform: translateY(-7px);
+        border: 1px solid hsl(322, 100%, 66%);
+      }
+
+      header .f-hero-btn {
+        margin: 21px 0 112px 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        font-weight: 600;
+        padding: 6px 33px;
+        border: none;
+      }
+
+      header .f-hero-btn:hover {
+        background-color: hsl(322, 100%, 66%);
+        box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+
+      header .headr-img {
+        width: 14%;
+        margin-bottom: 70px;
+      }
+
+      header img {
+        width: 550px;
+      }
+
+      /* ****
+* Media Qouery.  @mobile Screen
+* For { header section } 
+*  ****/
+
+      /* *for mobile */
+      @media (max-width: 576px) {
+        header .h-content {
+          width: 100%;
+          padding-bottom: 40px;
+          display: block;
+        }
+
+        header h1 {
+          font-size: 35px;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        header p {
+          margin: 0 auto;
+          padding: 20px 0;
+          text-align: center;
+        }
+
+        header .s-hero-btn {
+          margin-bottom: 3rem;
+        }
+
+        header img {
+          width: 350px;
+          margin: 0 auto;
+        }
+
+        header h1 {
+          font-size: 27px;
+        }
+
+        header .f-hero-btn {
+          margin: 19px 0 112px 0;
+          margin-left: 0px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #000000c9;
+          background-color: #fff;
+          border-radius: 45px;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease 0s;
+          cursor: pointer;
+          outline: none;
+          font-weight: 600;
+          padding: 3px 18px;
+        }
+      }
+
+      /* ****
+* Media Qouery. @Tablet
+* For { header section } 
+*  ****/
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        header .h-content {
+          width: 100%;
+          padding-bottom: 40px;
+        }
+
+        header img {
+          width: 450px;
+        }
+
+        header .s-hero-btn {
+          margin: none;
+        }
+
+        header h1 {
+          font-size: 26px;
+        }
+
+        header p {
+          font-size: 14px;
+        }
+      }
+
+      /* !hero end */
+
+      /* *start first section */
+
+      .f-section {
+        margin: 40px 0;
+        padding: 10px;
+      }
+
+      .f-section .row {
+        -webkit-box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+        -moz-box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+        box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+      }
+
+      .f-section .f-content {
+        padding: 100px 0 128px 29px;
+        margin-left: 56px;
+      }
+
+      .f-section img {
+        width: 450px;
+        padding: 50px;
+      }
+
+      /* ***
+* media query start
+*  ***/
+
+      /* *for mobile screen */
+      @media (max-width: 575.98px) {
+        .f-section .row {
+          height: auto;
+        }
+
+        .f-section h2 {
+          text-align: center;
+          font-size: 23px;
+          padding-top: 25px;
+        }
+
+        .f-section p {
+          text-align: center;
+          font-size: 14px;
+          padding: 5px 15px;
+          margin: none;
+        }
+
+        .f-section .f-content {
+          padding: 5px 0 10px 5px;
+          margin-left: 0;
+        }
+
+        .f-section img {
+          width: 330px;
+        }
+      }
+
+      /* ****
+* Media Qouery. @Tablet
+* For { first section } 
+*  ****/
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .f-section .row {
+          height: auto;
+        }
+
+        .f-section h2 {
+          text-align: center;
+          font-size: 23px;
+          padding-top: 15px;
+        }
+
+        .f-section p {
+          text-align: center;
+          font-size: 14px;
+          /* padding: 5px 5px; */
+          padding: 9px 0;
+          margin: none;
+        }
+
+        .f-section .f-content {
+          padding: 3px 0 10px 5px;
+          margin-left: 0;
+        }
+
+        .f-section img {
+          width: 310px;
+          padding: 50px;
+          padding-right: 80px;
+        }
+      }
+
+      /* !end first section */
+
+      /* *start second section */
+
+      .s-section {
+        margin: 40px 0;
+      }
+
+      .s-section .row {
+        -webkit-box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+        -moz-box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+        box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+      }
+
+      .s-section .s-content {
+        padding: 100px 0 128px 29px;
+        margin-right: 56px;
+      }
+
+      .s-section img {
+        width: 450px;
+        padding: 50px;
+      }
+
+      /* ***
+* media query start
+*  ***/
+
+      /* *for mobile screen */
+      @media (max-width: 575.98px) {
+        .s-section .row {
+          height: auto;
+        }
+
+        /* *278 */
+        .s-section h2 {
+          text-align: center;
+          font-size: 23px;
+          padding-top: 25px;
+        }
+
+        .s-section p {
+          text-align: center;
+          font-size: 14px;
+          padding: 5px 15px;
+          margin: none;
+        }
+
+        .s-section .s-content {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+
+        .s-section img {
+          width: 330px;
+          padding: 50px;
+        }
+      }
+
+      /* ****
+* Media Qouery. @Tablet
+* For { Second section } 
+*  ****/
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .s-section .row {
+          height: auto;
+        }
+
+        .s-section h2 {
+          text-align: center;
+          font-size: 23px;
+          padding-top: 15px;
+        }
+
+        .s-section p {
+          text-align: center;
+          font-size: 14px;
+          /* padding: 5px 5px; */
+          padding: 9px 0;
+          margin: none;
+        }
+
+        .s-section .s-content {
+          padding: 3px 0 10px 5px;
+          margin: 0;
+        }
+
+        .s-section img {
+          width: 310px;
+          padding: 50px;
+          padding-right: 80px;
+          margin-left: -40px;
+        }
+      }
+
+      /* !end second section */
+
+      /* *start third section */
+
+      .t-section {
+        margin: 40px 0;
+        margin-bottom: 19rem;
+      }
+
+      .t-section .row {
+        -webkit-box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+        -moz-box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+        box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+      }
+
+      .t-section .t-content {
+        padding: 100px 0 128px 29px;
+        margin-left: 56px;
+      }
+
+      .t-section img {
+        width: 450px;
+        padding: 50px;
+      }
+
+      /* ***
+* media query start
+*  ***/
+
+      /* *for mobile screen */
+      @media (max-width: 575.98px) {
+        .t-section .row {
+          height: auto;
+        }
+
+        .t-section h2 {
+          text-align: center;
+          font-size: 23px;
+          padding-top: 25px;
+        }
+
+        .t-section p {
+          text-align: center;
+          font-size: 14px;
+          padding: 5px 14px;
+          margin: none;
+        }
+
+        .t-section .t-content {
+          padding: 5px 0 10px 5px;
+          margin-left: 0;
+        }
+
+        .t-section img {
+          width: 330px;
+          padding: 50px;
+        }
+      }
+
+      /* ****
+* Media Qouery. @Tablet
+* For { first section } 
+*  ****/
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .t-section .row {
+          height: auto;
+        }
+
+        .t-section h2 {
+          text-align: center;
+          font-size: 23px;
+          padding-top: 15px;
+        }
+
+        .t-section p {
+          text-align: center;
+          font-size: 14px;
+          padding: 9px 0;
+          margin: none;
+        }
+
+        .t-section .t-content {
+          padding: 3px 0 10px 5px;
+          margin-left: 0;
+        }
+
+        .t-section img {
+          width: 310px;
+          padding: 50px;
+          padding-right: 80px;
+        }
+      }
+
+      /* !end third section */
+
+      /* *start last section third section */
+
+      .l-section {
+        margin: 60px 0;
+        text-align: center;
+      }
+
+      .l-section button {
+        text-align: center;
+      }
+
+      .l-section .row {
+        -webkit-box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+        -moz-box-shadow: 1px 1px 10px 4px rgba(230, 230, 230, 1);
+        box-shadow: 1px 1px 2px 1px rgba(230, 230, 230, 1);
+        padding: 50px;
+        width: 53%;
+        margin: 0 auto;
+        border-radius: 5px;
+
+        position: absolute;
+        top: 123rem;
+        right: 20rem;
+        background: white;
+      }
+
+      .l-section button {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        background-color: hsl(322, 100%, 66%);
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease 0s;
+        cursor: pointer;
+        outline: none;
+        font-weight: 600;
+        padding: 7px 46px;
+        margin-top: 10px;
+      }
+
+      .l-section button:hover {
+        background-color: #fff;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: hsl(322, 100%, 66%);
+        transform: translateY(-7px);
+      }
+
+      /* ***
+* media query start
+*  ***/
+
+      /* *for mobile screen */
+      @media (max-width: 575.98px) {
+        .l-section {
+          margin: 60px 0;
+          text-align: center;
+        }
+
+        .l-section h2 {
+          font-size: 23px;
+          font-weight: bold;
+          padding-bottom: 15px;
+        }
+
+        .l-section button {
+          text-align: center;
+        }
+
+        .l-section .row {
+          box-shadow: 1px 1px 2px 1px rgba(230, 230, 230, 1);
+          padding: 26px;
+          width: 92%;
+          margin: 0 auto;
+          border-radius: 5px;
+          position: absolute;
+          top: 150rem;
+          right: 1rem;
+          background: white;
+        }
+
+        .l-section button {
+          width: 132px;
+          height: 31px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #fff;
+          background-color: hsl(322, 100%, 66%);
+          border-radius: 20px;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          transition: all 0.4s ease 0s;
+          cursor: pointer;
+          outline: none;
+          font-weight: 600;
+          padding: 3px 9px;
+          margin-top: 4px;
+        }
+
+        .l-section button:hover {
+          background-color: #fefe;
+          box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+          color: hsl(322, 100%, 66%);
+          transform: translateY(-7px);
+        }
+      }
+
+      /* !end last section third section */
+
+      /* *footer start */
+
+      footer {
+        background: hsl(192, 100%, 9%);
+        padding: 50px 0;
+      }
+
+      footer .container {
+        margin-top: 52px;
+      }
+
+      footer img {
+        width: 30%;
+        height: 90px;
+        background: #eee;
+        border: solid 1px #eee;
+        border-radius: 5%;
+        opacity: 0.6;
+      }
+
+      .context-dark,
+      .bg-gray-dark,
+      .bg-primary {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .footer-classic a,
+      .footer-classic a:focus,
+      .footer-classic a:active {
+        color: #ffffff;
+      }
+
+      .nav-list li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .nav-list li a:hover:before {
+        margin-left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      ul,
+      ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .social-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 23px;
+        font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .nav-list li a:before {
+        content: "\f14f";
+        font: 400 21px/1 "Material Design Icons";
+        color: #4d6de6;
+        display: inline-block;
+        vertical-align: baseline;
+        margin-left: -28px;
+        margin-right: 7px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.22s ease;
+      }
+
+      /* ***
+* media query start
+*  ***/
+
+      /* *for mobile screen */
+      @media (max-width: 575.98px) {
+        footer {
+          padding-top: 100px;
+        }
+
+        footer .nav-list {
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+
+      /* !footer end */
+    </style>
+  </head>
+
+  <body>
+    <!-- *start header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <img class="headr-img img-fluid" src="logo.png" alt="" />
+          <!-- <button class="f-hero-btn ml-auto">Try It Free</button> -->
+        </div>
+        <div class="row d-flex justify-content-center h-content">
+          <div class="col-sm-7 col-md-4 f-hero-content text-center-sm">
+            <h1>OPENLIB</h1>
+            <p>
+              Manage all your organisation services in a single distributed
+              application. Our mission is to provide all the ERP solutions to an
+              organisation that allows you to execute matters according to plan
+              and at the same time with ease.
+            </p>
+            <!-- <div class="col-sm-12 text-center">
+              <button class="btn s-hero-btn">Get Started For Free</button>
+            </div> -->
+          </div>
+          <div class="col-12 col-md-7 text-center hero-img">
+            <img
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+              src="https://i.ibb.co/x8Gvwyw/illustration-mockups.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- !end header -->
+
+    <!-- *start first section  -->
+    <section class="f-section">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-4 f-content">
+            <h2>ERP Applications</h2>
+            <ul>
+              <li>Financial Management</li>
+              <li>Manufacturing</li>
+              <li>Human Resource Management</li>
+              <li>Supply Chain Management</li>
+              <li>If you want something else, we will build that too...</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-7 text-center">
+            <img
+              data-aos="fade-up"
+              src="https://i.ibb.co/kJhXbXb/illustration-grow-together.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !end first section  -->
+
+    <!-- *start second section  -->
+    <section class="s-section">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-7 text-center s-img">
+            <img
+              data-aos="fade-right"
+              src="https://i.ibb.co/wppZBmb/illustration-flowing-conversation.png"
+              alt=""
+            />
+          </div>
+          <div class="col-sm-4 s-content">
+            <h2>Blockchain</h2>
+            <ul>
+              <li>
+                All of our applciation are on the layers distributed network,
+                which means you and only you will be the one to control your
+                organisations/users data.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !end second section  -->
+
+    <!-- *start third section  -->
+    <section class="t-section">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-4 t-content">
+            <h2>Artificail Intelligence / Machine Learning</h2>
+            <ul>
+              <li>Book recommendetation system for Library in ERP.</li>
+              <li>
+                Resource allocation management system for HR that can distribute
+                resources in pool of expertise area.
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-7 text-center t-img">
+            <img
+              data-aos="fade-left"
+              src="https://i.ibb.co/5YpYcwz/illustration-your-users.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !end third section  -->
+
+    <!-- *start last section  -->
+    <section class="l-section">
+      <div class="container">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="row d-block justify-content-center l-title"
+        >
+          <h2>Ready To Join our Community?</h2>
+          <button>Get Started here</button>
+        </div>
+      </div>
+    </section>
+    <!-- !end last section  -->
+
+    <!-- *start footer -->
+    <footer class="section footer-classic context-dark bg-image">
+      <div class="container">
+        <div class="row row-30">
+          <div class="col-md-4 col-xl-5">
+            <div class="pr-xl-4">
+              <a class="brand" href="index.html"
+                ><img src="logo.png" alt=""
+              /></a>
+              <ul>
+                <i class="fas fa-map-marker-alt d-block mt-3"
+                  ><a href="#">&nbsp;Find us</a></i
+                >
+                <!-- <i class="fas fa-phone-alt d-block mt-3"> +966-5438837</i> -->
+                <i class="far fa-envelope d-block mt-3 mb-3"
+                  >&nbsp; openlibdevs@gmail.com</i
+                >
+              </ul>
+              <p class="rights">
+                <span>© </span><span class="copyright-year">2020</span
+                ><span>All Rights Reserved.</span>
+              </p>
+            </div>
+          </div>
+          <!-- ! second col -->
+          <div class="col-md-2">
+            <a href="#" class="d-block">About us</a>
+            <a href="#" class="d-block">What we do</a>
+            <a href="#" class="d-block">FAQ</a>
+          </div>
+          <div class="col-md-2">
+            <a href="#" class="d-block">Career</a>
+            <a href="#" class="d-block">Blog</a>
+            <a href="#" class="d-block">Contact us</a>
+          </div>
+          <!-- ! last col -->
+          <div class="col-md-4 col-xl-3">
+            <ul class="nav-list">
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook-square fa-lg white-text fa-1x"></i>
+              </a>
+              <a href="https://twitter.com/aslwz" target="_blank">
+                <i class="fab fa-twitter fa-lg white-text fa-1x mx-2"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram fa-lg white-text fa-1x"></i>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- *end footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
+  </body>
+</html>
